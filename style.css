@@ -47,6 +47,9 @@ body {
     display: flex;
     gap: 10px;
 }
+.navbar__s4{
+    display: none;
+}
 .Mylearning{
     position: relative;
     cursor: pointer;
@@ -127,7 +130,9 @@ body {
 }
 
 .Recommended__img {
-    width: 300px;
+   flex-grow: 1;
+   flex-basis: 20%;
+   margin: 5px;
 }
 
 .Recommended__img img {
@@ -193,4 +198,24 @@ body {
     display: flex;
     justify-content: space-between;
     margin: 20px;
+}
+ /* media gueries */
+@media screen and (max-width:800px) {
+    body{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:600px) {
+    .Recommended__img{
+        flex-basis: 40%;
+    }
+    .categories{
+        display: none ;
+    }
+    .navbar__s2,.navbar__s3__icons{
+        display: none;
+    }
+    .navbar__s4{
+        display: block;
+    }
 }
